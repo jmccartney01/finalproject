@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Link to css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/about.css">
+
+    <title>About Us | Drop Dimes Co</title>
+</head>
+
+<body>
+
+    <section class="hero">
+        <header>
+            <a href="index.html"><img class="logoimage" src="images/whitelogo.webp" alt="Homepage" title="Homepage"></a>
+            <nav>
+                <div class="nav-item"><a href="index.html">Home</a></div>
+                <div class="nav-item"><a href="about.html">About Us</a></div>
+                <div class="nav-item"><a href="shorts.html">Shorts</a></div>
+                <div class="nav-item"><a href="outerwear.html">Outerwear</a></div>
+                <div class="nav-item"><a href="releases.html">New Releases</a></div>
+            </nav>
+        </header>
+        <div class="title-text">
+            <h2>THE BIG QUESTION...</H2>
+            <h1>WHAT IS DROP DIMES?</h1>
+        </div>
+    </section>
+
+    <img class="profile-image" src="images/perrylogo.PNG" alt="#">
+
+    <h2 class="description-title">Drop Dimes owner, Will Perry:</h2>
+
+    <p>Wadup everybody. I’m Will Perry. This is Drop Dimes Company, the best apparel brand ever. Our shorts are so comfy
+        and so fresh that you’ll never want to take them off. Dimes gear is an investment that everyone should be
+        making.</p>
+
+    <p>Yes, our shorts are made from fully recycled material. We are committed contributors to the greater collective.
+        Dimes were born from the ashes of failed attempts to recreate the past.</p>
+
+    <p>Yes, I am constantly filled with mucho stoke, and will continue to bring some of the best men's and women's volleyball apparel to the market for all to enjoy.</p>
+
+    <h2 class="description-title">Here's another look at some of our Drop Dimes athletes...</h2>
+
+    <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+            <img src="images/averill.PNG">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="images/chad.PNG">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="images/kyler.PNG">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="images/perry.PNG">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="images/parker.PNG">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="images/jaylen.PNG">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="images/bayplayer.PNG">
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2022 Justin McCartney Productions</p>
+        <p class="contact">Contact us via Email: dropdimes@outlook.com   |   Phone Number: (619) 794-2459   |   Mailing Address: 105 AVENIDA PALA , SAN CLEMENTE, CA</p>
+    </footer>
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 5000); // Change image every 5 seconds
+        }
+    </script>
+
+</body>
+
+</html>

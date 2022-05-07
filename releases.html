@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link to css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/releases.css">
+
+    <title>Shorts | Drop Dimes Co</title>
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img class="logoimage" src="images/whitelogo.webp" alt="Homepage" title="Homepage"></a>
+        <nav>
+            <div class="nav-item"><a href="index.html">Home</a></div>
+            <div class="nav-item"><a href="about.html">About Us</a></div>
+            <div class="nav-item"><a href="shorts.html">Shorts</a></div>
+            <div class="nav-item"><a href="outerwear.html">Outerwear</a></div>
+            <div class="nav-item"><a href="releases.html">New Releases</a></div>
+        </nav>
+    </header>
+
+    <h3 class="head-text">Coming May 13th, 2022, Drop Dimes will be releasing 3 new items to the online store.</h3>
+    <div class="items">
+        <div class="item">
+            <img class="item-image" src="images/shorts.webp" alt="shorts">
+            <h3 class="item-name">Rose Terrain Shorts</h3>
+        </div>
+        <div class="item">
+            <img class="item-image" src="images/hoodie.png" alt="hoodie">
+            <h3 class="item-name">OPTX Style Hoodie</h3>
+        </div>
+        <div class="item">
+            <img class="item-image" src="images/socks.jpg" alt="socks">
+            <h3 class="item-name">Dimes on Dimes Socks</h3>
+        </div>
+
+    <main>
+        <div class="container mt-3">
+            <div class="mt-4 p-5 bg-primary text-white rounded">
+                <h1 id="demo"></h1>
+                <h2>until the next Drop Dimes release!</h2>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2022 Justin McCartney Productions</p>
+        <p class="contact">Contact us via Email: dropdimes@outlook.com   |   Phone Number: (619) 794-2459   |   Mailing Address: 105 AVENIDA PALA , SAN CLEMENTE, CA</p>
+    </footer>
+
+    <script>
+        var countDownDate = new Date("May 13, 2022 00:00:00").getTime();
+
+        var x = setInterval(function () {
+
+            var now = new Date().getTime();
+
+            var distance = countDownDate - now;
+
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("demo").innerHTML = days + "days " + hours + "hours "
+                + minutes + "minutes " + seconds + "seconds ";
+
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("demo").innerHTML = "EXPIRED";
+            }
+        }, 1000);
+    </script>
+
+</body>
+
+</html>
